@@ -14,7 +14,7 @@ def main():
             pic = Image.open(i)
             fname, filext = os.path.splitext(i)
             pic = geometry(pic)
-            pic.save('converted/{}.png'.format(fname))
+            pic.save('converted/' + i, "PNG")
 
 main()
 
